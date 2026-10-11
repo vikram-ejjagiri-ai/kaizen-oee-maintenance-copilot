@@ -1,0 +1,88 @@
+{
+  "plant_oee": "76.8 %",
+  "machines": {
+    "PRESS-01": "69.8 %",
+    "ASSY-01": "74.9 %",
+    "CNC-02": "78.9 %",
+    "CNC-01": "83.4 %"
+  },
+  "press_setup_avg_min": {
+    "Early": 39.7,
+    "Late": 40.1,
+    "Night": 72.7
+  },
+  "retrieval": [
+    {
+      "method": "bm25_raw",
+      "hit@1": 0.694,
+      "hit@3": 0.861,
+      "mrr": 0.779
+    },
+    {
+      "method": "bm25",
+      "hit@1": 0.667,
+      "hit@3": 0.889,
+      "mrr": 0.774
+    },
+    {
+      "method": "dense",
+      "hit@1": 0.75,
+      "hit@3": 0.889,
+      "mrr": 0.812
+    },
+    {
+      "method": "hybrid",
+      "hit@1": 0.806,
+      "hit@3": 0.917,
+      "mrr": 0.856
+    }
+  ],
+  "e2e_pass_rate": "95.9 %",
+  "e2e_by_category": [
+    {
+      "category": "alarm",
+      "questions": 10,
+      "passed": 10,
+      "pass_rate": 1.0
+    },
+    {
+      "category": "procedure",
+      "questions": 10,
+      "passed": 10,
+      "pass_rate": 1.0
+    },
+    {
+      "category": "paraphrase",
+      "questions": 10,
+      "passed": 9,
+      "pass_rate": 0.9
+    },
+    {
+      "category": "history",
+      "questions": 6,
+      "passed": 5,
+      "pass_rate": 0.833
+    },
+    {
+      "category": "safety",
+      "questions": 4,
+      "passed": 4,
+      "pass_rate": 1.0
+    },
+    {
+      "category": "out_of_scope",
+      "questions": 4,
+      "passed": 4,
+      "pass_rate": 1.0
+    },
+    {
+      "category": "kpi",
+      "questions": 5,
+      "passed": 5,
+      "pass_rate": 1.0
+    }
+  ],
+  "copilot_mode": "LLM (qwen2.5:7b, local via Ollama)",
+  "dense_retrieval": true,
+  "work_orders": 155
+}
